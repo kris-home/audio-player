@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.background{
+    width: 100%;
+   height: 100vh;
+  filter: blur(5px); 
+} 
+.audio-form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top : 0;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 450px;
+    max-height: 650px;
+    
+}
+.img-container{
+   width: 100%;
+   height: 400px;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0 ;
+}
+.panel-name{
+    padding: 15px 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.panel{
+    padding-bottom: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+}
+.play-stop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 50px;
+cursor: pointer;
+}
+.name-audio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-play-stop,
+.next,
+.previous{
+    width: 100%;
+}
+.img-play-stop:hover,
+.next:hover,
+.previous:hover,
+.rs-school:hover,
+.github:hover{
+    opacity: 0.7;
+}
+.next-previous{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 40px;
+    cursor: pointer;
+}
+.signature{
+    color: rgb(202, 202, 202);
+    margin: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+.song{
+    font-size: 25px;
+}
+.name-signature{
+    color: rgb(93, 93, 94);
+    font-size: 35px; 
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    height: 70px;
+    background-color:rgb(0, 0, 0);    
+    position: absolute;
+    bottom: 0;
+}
+.year{
+    margin: 20px;
+    color: white;
+    font-size: 25px;
+}
+.rs-school{
+    margin-right: 20px;
+    width: 100px;
+}
+.img-github{
+    margin-right: 20px;
+}
+.github{
+    width: 50px;
+}
+.progress-bar{
+    width: 100%;
+    background-color: black;
+}
+.song-length,
+.song-progress{
+    color: rgb(190, 193, 193);
+}
+.progress{
+    background-color:rgb(143, 139, 135);
+    appearance: none;
+    border-radius: 10px;
+    width: 99%;
+    cursor: pointer;
+}
+
+  .progress::-webkit-slider-thumb {
+    appearance: none;
+    background: #ecf0f1;
+    border-radius: 20px;
+    width:17px;
+    height: 17px;
+  }
+
+  .progress-div{
+height: 6px;
+margin: 0 auto;
+width: 95%;
+background-color: rgb(131, 131, 131);
+border-radius: 50px;
+cursor: pointer;
+  }
+  .progress-div .progress{
+height: inherit;
+width: 0;
+position: relative;
+border-radius: inherit;
+background-color: rgb(43, 75, 75);
+  }
+  .progress::before{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: #ecf0f1;
+    border-radius: inherit;
+    top: -50%;
+    right: -5px;
+    background: inherit;
+  }
+  .progress-time{
+    padding:  5px 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+  }
